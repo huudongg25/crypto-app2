@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./Layout.module.scss";
-import Header from "../components/Header";
+import Header from "../components/header";
 import Navbar from "../components/navbar";
 import { children } from "react";
 
