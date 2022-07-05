@@ -25,7 +25,7 @@ function VaultsPage() {
           color: #fff;
           padding: 0;
           margin: 0;
-          font-family: "Brinnan";
+          font-family: "Brinnan", sans-serif;
           font-size: 62.5%;
         }
 
