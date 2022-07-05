@@ -104,7 +104,7 @@ function Login() {
               </div>
               <div className={cx("form")}>
                 <div className={cx("form-container")}>
-                  <label for="email" className={cx("form-label")}>
+                  <label htmlFor="email" className={cx("form-label")}>
                     Email address
                   </label>
                   <input
@@ -115,7 +115,7 @@ function Login() {
                   />
                 </div>
                 <div className={cx("form-container")}>
-                  <label for="pass" className={cx("form-label")}>
+                  <label htmlFor="pass" className={cx("form-label")}>
                     Password
                   </label>
                   <input
@@ -134,7 +134,7 @@ function Login() {
                 <div className={cx("form-footer")}>
                   <div className={cx("checkbox-container")}>
                     <input id="checkbox" type="checkbox" />
-                    <label for="checkbox">Remember me</label>
+                    <label htmlFor="checkbox">Remember me</label>
                   </div>
                   <span className={cx("forgot-pass")}>Forgot password?</span>
                 </div>
@@ -179,7 +179,7 @@ function Login() {
               </div>
               <div className={cx("form")}>
                 <div className={cx("form-container")}>
-                  <label for="email" className={cx("form-label")}>
+                  <label htmlFor="email" className={cx("form-label")}>
                     Email address
                   </label>
                   <input
@@ -190,7 +190,7 @@ function Login() {
                   />
                 </div>
                 <div className={cx("form-container")}>
-                  <label for="email" className={cx("form-label")}>
+                  <label htmlFor="email" className={cx("form-label")}>
                     Username
                   </label>
                   <input
@@ -201,7 +201,7 @@ function Login() {
                   />
                 </div>
                 <div className={cx("form-container")}>
-                  <label for="pass" className={cx("form-label")}>
+                  <label htmlFor="pass" className={cx("form-label")}>
                     Password
                   </label>
                   <input
