@@ -1,0 +1,287 @@
+.wrapper {
+  padding: 40px 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.pay-container {
+  margin-bottom: 20px;
+  background: #171717;
+  width: 700px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.pay-header {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.pay-btn {
+  cursor: pointer;
+  width: 50%;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding: 20px 73px;
+  border: none;
+  background: #171717;
+  outline: none;
+  color: #fff;
+}
+
+.pay-btn.active {
+  background: #505050;
+}
+
+.count {
+  display: none;
+  text-align: center;
+  position: relative;
+  margin: 90px 0 100px;
+}
+
+.count.active {
+  display: block;
+}
+
+.count-num {
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 9.7rem;
+}
+
+.count-currency {
+  margin-right: 8px;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  position: absolute;
+  left: 40%;
+}
+
+.currency-change {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nickname {
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+.currency-icon {
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 3.5rem;
+}
+
+.form-pay {
+  display: none;
+  padding: 0 55px;
+}
+
+.form-pay.active {
+  display: block;
+}
+
+.form-group {
+  background: #242424;
+  border-radius: 12px;
+  padding: 20px 0;
+}
+
+.form-item {
+  padding: 0 25px;
+  display: flex;
+  border-bottom: 1px solid #303030;
+}
+
+.form-item:first-child {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-item:last-child {
+  border: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.currency-group {
+  padding: 15px 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #070707 0%, #020202 100%);
+  border-radius: 12.5px;
+}
+
+.currency-group span {
+  display: block;
+  margin: 0 4px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.group-icon {
+  font-size: 2rem;
+}
+
+.input-lable {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.input-item {
+  margin-left: 19px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #77838f;
+}
+
+.form-general {
+  padding: 0 55px;
+  margin-bottom: 24px;
+}
+
+.form-btn {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 19px;
+  padding: 18px;
+  color: #fff;
+  opacity: 0.6;
+  border: 2px solid rgba(101, 204, 248, 0.3);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  cursor: pointer;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-balance {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+.recent-container {
+  width: 599px;
+  background: #0e0e0e;
+  border: 2px solid #1c1c1c;
+  border-radius: 24px;
+  padding: 22px 0;
+}
+
+.header-recent {
+  margin: 0;
+  padding: 0 30px 22px;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.recent-list {
+  padding: 19px 0 0;
+}
+
+.recent-item {
+  margin-top: 20px;
+  padding: 0 30px 20px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.recent-item:last-child {
+  border: none;
+}
+
+.recent-transfer {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #77838f;
+}
+
+.recent-nofi {
+  padding: 5px 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.recent-time {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #77838f;
+}
+
+.qr-code {
+  display: none;
+  margin-top: 89px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code.active {
+  display: flex;
+}
+
+.scan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #77838f;
+}
+
+.asset {
+  margin-top: 65px;
+  padding: 0 55px;
+  display: none;
+}
+
+.asset.active {
+  display: flex;
+}
+
+.title {
+  margin: 0;
+}
+.asset-group {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: #353535;
+  border-radius: 12px;
+  padding: 20px 30px;
+}

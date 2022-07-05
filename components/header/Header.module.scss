@@ -1,0 +1,78 @@
+.header {
+  margin-left: 245px;
+  background: #040404;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #1a1a1a;
+  z-index: 2;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 49px;
+  }
+
+  &-page {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #0e0e0e;
+    border: 1px solid #1c1c1c;
+    border-radius: 8px;
+    padding: 9px 10px;
+    margin: 0 25px;
+    &-item {
+      margin-right: 6px;
+    }
+    &-name {
+      margin-top: 2px;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.header-notification {
+  position: relative;
+  padding: 9px;
+  background: #0e0e0e;
+  border: 1px solid #1c1c1c;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &-bell {
+    font-size: 2rem;
+  }
+
+  &-dots {
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    background-image: linear-gradient(to right, #5381ec, #114bd1);
+  }
+}
+
+.header-user img {
+  cursor: pointer;
+  width: 55px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #1c1c1c;
+}

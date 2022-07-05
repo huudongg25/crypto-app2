@@ -1,0 +1,253 @@
+.wrapper {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-top: 62px;
+}
+
+//====tab====
+.tabs-group {
+  max-width: 370px;
+  padding: 9px 25px;
+  background: #0e0e0e;
+  border: 2px solid #1c1c1c;
+  border-radius: 12px;
+}
+
+.tab-btn {
+  cursor: pointer;
+  color: #77838f;
+  background-color: transparent;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.tab-btn.active {
+  background: linear-gradient(180deg, #1c1c1c 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  color: #fff;
+}
+
+// ====swap=====
+.swap-group {
+  display: none;
+  min-width: 600px;
+  margin-top: 25px;
+  background: #0e0e0e;
+  border: 2px solid #1c1c1c;
+  border-radius: 15px;
+}
+
+.swap-group.active {
+  display: block;
+}
+
+.swap-header {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.swap-page {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.swap-settings {
+  cursor: pointer;
+  font-size: 2.2rem;
+}
+
+//========token======
+.token {
+  margin: 20px 40px;
+  &-values {
+    position: relative;
+    margin-bottom: 11px;
+    background: #292a2d;
+    border: 1px solid #525252;
+    border-radius: 12px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+  }
+
+  &-group {
+    display: flex;
+    align-items: center;
+  }
+
+  &-number {
+    color: #77838f;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.7rem;
+    margin-right: 19px;
+  }
+
+  &-max {
+    padding: 8px 18px;
+    background: linear-gradient(128.99deg, #0e0e0e 27.63%, #1c1c1c 89.43%);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+}
+
+.token-values.active {
+  margin-bottom: 25px;
+}
+
+.token-change {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 9px 11px;
+  background: linear-gradient(180deg, #0e0e0e 0%, #1c1c1c 100%);
+  border-radius: 12.5px;
+
+  &-name {
+    margin: 0 4px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &-select {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+
+.token-button {
+  color: #949596;
+  border-radius: 50%;
+  font-size: 5.5rem;
+  position: absolute;
+  bottom: -39%;
+  left: 45%;
+  padding: 10px;
+  background: #1f1f1f;
+  border: 2px solid #525252;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.token-begin-swap {
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #16858c;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  border-radius: 12px;
+  padding: 16px 0;
+  margin-top: 7px;
+}
+
+//========percent=======
+.percent {
+  display: none;
+  margin-top: 23px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.percent.active {
+  display: flex;
+}
+
+.finality,
+.fee {
+  text-align: center;
+  padding: 29px 79px;
+  background: #0e0e0e;
+  border: 2px solid #1c1c1c;
+  border-radius: 2.4rem;
+}
+
+.finality-sec,
+.fee-sec {
+  margin: 0;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+}
+
+.finality-desc,
+.fee-desc {
+  display: block;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #77838f;
+  padding-top: 8px;
+}
+
+//====token open=====
+
+.token-open {
+  background: #292a2d;
+  border-radius: 12px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 7px;
+  animation: slide linear 0.3s;
+}
+
+.token-open.active {
+  display: flex;
+}
+
+.token-from {
+  display: flex;
+  align-items: center;
+}
+
+.token-from img {
+  margin: 0 7px;
+}
+
+.from {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.from-name {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,20 @@
+.wrapper {
+  background: #040404;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  z-index: 2;
+}
+
+.navbar {
+  z-index: 2;
+}
+.contents {
+  z-index: 1;
+  background: #040404;
+  padding-left: 245px;
+  padding-top: 88px;
+}

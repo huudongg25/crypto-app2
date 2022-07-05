@@ -1,0 +1,157 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 245px;
+  border-right: 1px solid #1a1a1a;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 4px;
+  background: #000;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #77838f;
+  border-radius: 20px;
+}
+
+.nav-header {
+  margin: 50px 15px 80px 39px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.sponsor-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  text-align: justify;
+}
+
+.sponsor-name {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+}
+
+.sponsor-desc {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #77838f;
+}
+
+.nav {
+  display: flex;
+  margin: 0 26px 0 34px;
+  text-align: center;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  user-select: none;
+  cursor: pointer;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 8px 20px;
+  position: relative;
+}
+
+.nav-item.active {
+  background: linear-gradient(180deg, #0e0e0e 0%, #161616 100%);
+  border: 2px solid #1c1c1c;
+  border-radius: 12px;
+}
+
+.nav-icon {
+  font-size: 2.5rem;
+  margin-right: 1.6rem;
+}
+
+.nav-name {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.sub-nav {
+  position: absolute;
+  text-align: justify;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  display: none;
+  transition: 0.8s;
+}
+
+.sub-nav.active {
+  display: block;
+}
+
+.arrow-sub-nav {
+  display: none;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  animation: slide-top linear 0.3s;
+}
+
+.arrow-sub-nav.active {
+  display: block;
+}
+
+.sub-nav-item {
+  padding: 12px 15px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  animation: slide-bottom linear 0.4s;
+}
+.sub-nav-item.active {
+  background: linear-gradient(180deg, #0e0e0e 0%, #161616 100%);
+  border: 2px solid #1c1c1c;
+  border-radius: 12px;
+}
+
+//====animation=======
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
