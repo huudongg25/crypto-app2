@@ -97,7 +97,7 @@ function ModalVaults({ isShowing, hide }) {
               </div>
               <div className={cx("selection")}>
                 <div className={cx("input-group")}>
-                  <label for="checkbox">Loop</label>
+                  <label htmlFor="checkbox">Loop</label>
                   <input type="checkbox" id="checkbox" />
                 </div>
                 <ul className={cx("select-group")}>
